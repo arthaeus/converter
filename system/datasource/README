@@ -1,0 +1,11 @@
+I am creating a datasource base class to enable communication between the iTranslators, the iMls, and the iDataSource. I don't want to have a base class that every class extends because every class
+will not need everything in the  base class? since the concept of the datasource, translator, and lookup relate closely with each other, maybe make their respective abstract classes extend the same
+abstract class.  these 3 classes need to implement iContained because they are contained by an object, and may need to access access in or via ( container->containerProperty->function() ) their container. 
+
+One way to look at it intuitively is to say that the datasource contains the translator which contains the lookup.  That makes the datasource the base of these 3 objects. these 3 objects are a part of
+a discrete subsystem
+
+what if the datasource subsystem and the mls subsystem and x subsystem share commonalities?
+
+I think there should be a sql generator.  I just think that the sql that will be used may do better as an object as opposed to a string.
+

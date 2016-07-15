@@ -1,0 +1,4 @@
+These classes work at the mls level.  The mls is the largest discrete unit that the system will currently deal with
+As far as converting data goes, an mls has property types, and property types have properties (aka listings) which are represented as rows in a table.
+
+
